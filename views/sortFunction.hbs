@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{title}}</title>
+    <meta charset="utf-8">
+</head>
+    <body>
+        {{>menu}}
+        <form name="action" method="get" action="{{path}}">
+            <p><h1>Function: Sorting of string</h1>
+            <p><h3>Enter your login:</h3>
+            <label>
+                <input type="text" name="login" placeholder="Your login">
+            </label>
+            <p>Input your string</p>
+            <p><label>
+                <input type="text" name="StringForSort" placeholder="Your string">
+            </label></p>
+            <p><input type="submit" value="Send"></p>
+        </form>
+        {{>footer}}
+    </body>
+</html>
