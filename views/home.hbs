@@ -2,15 +2,24 @@
 <html>
 <head>
     <title>{{title}}</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8-8">
+
+    <link type="text/css" href="/css/style.css" rel="stylesheet">
+
 </head>
     <body>
+
         {{>menu}}
-        <p><h1>{{main}}</h1></p>
-        <p><h3>{{information}}</h3></p>
-        <p>{{lab1}}</p>
-        <p>{{lab2}}</p>
-        <p>{{lab3}}</p>
+        <div class="header">
+            <br><p>{{information}}</p>
+        </div>
+        <div class="content">
+            <br><p>{{lab1}}</p>
+            <br><p>{{lab2}}</p>
+            <br><p>{{lab3}}</p>
+        </div>
+
         {{>footer}}
+
     </body>
 </html>

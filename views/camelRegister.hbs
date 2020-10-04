@@ -3,14 +3,24 @@
 <head>
     <title>{{title}}</title>
     <meta charset="utf-8">
+
+    <link type="text/css" href="/css/style.css" rel="stylesheet">
+
 </head>
 <body>
 {{>menu}}
 <form name="action" method="get" action="{{path}}">
-    <p><h1>Function: Make Camel Register</h1></p>
-    <p>Input your string</p>
+    <div class="header">
+        <p><br>Function: Make Camel Register</p>
+    </div>
+    <div class="information">
+    <p><br>Input your string</p>
+    </div>
+
+    <div class="url">
     <p><input type="text" name="String" placeholder="Your string"></p>
-    <p><input type="submit" value="Send"></p>
+    </div>
+    <p><br><input type="submit" class="button button1" value="Send"></p>
 </form>
 {{>footer}}
 </body>

@@ -3,11 +3,18 @@
 <head>
     <title>{{title}}</title>
     <meta charset="utf-8">
+
+    <link type="text/css" href="/css/style.css" rel="stylesheet">
+
 </head>
     <body>
         {{>menu}}
-        <p><h1>{{tit}} {{errorStatus}}</h1></p>
-        <p>{{errorMessage}}</p>
+        <div class="header">
+            <br><p>{{tit}} {{errorStatus}}</p>
+        </div>
+        <div class="error">
+            <br>{{errorMessage}}
+        </div>
         {{>footer}}
     </body>
 </html>

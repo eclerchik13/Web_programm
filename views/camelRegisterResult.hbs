@@ -3,13 +3,20 @@
 <head>
     <title>{{title}}</title>
     <meta charset="utf-8">
+
+    <link type="text/css" href="/css/style.css" rel="stylesheet">
+
 </head>
 <body>
 {{>menu}}
-<p><h3>Your string before camel register:</h3>
-{{yourQuery}}
-<p><h3>Your string after camel register:</h3>
-    {{answer}}</p>
+<div class="header">
+<p><br>Your string before camel register:
+</div>
+<br><div class="information">
+{{yourQuery}}</div>
+<div class="header">
+<br><p>Your string after camel register:</div>
+<div class="information"><br>{{answer}}</div></p>
 <p>
     {{>footer}}
 </body>

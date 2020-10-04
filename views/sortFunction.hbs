@@ -3,20 +3,35 @@
 <head>
     <title>{{title}}</title>
     <meta charset="utf-8">
+
+    <link type="text/css" href="/css/style.css" rel="stylesheet">
+
 </head>
     <body>
         {{>menu}}
         <form name="action" method="get" action="{{path}}">
-            <p><h1>Function: Sorting of string</h1>
-            <p><h3>Enter your login:</h3>
-            <label>
+            <div class="header">
+                <br><p>Function: Sorting of string
+            </div>
+
+            <div class="information">
+            <br><p>Enter your login:
+            </div>
+
+            <div class="auth">
                 <input type="text" name="login" placeholder="Your login">
-            </label>
-            <p>Input your string</p>
-            <p><label>
+            </div>
+
+            <div class="information">
+                <br><p>Input your string</p>
+            </div>
+
+            <div class="url">
+
                 <input type="text" name="StringForSort" placeholder="Your string">
-            </label></p>
-            <p><input type="submit" value="Send"></p>
+            </div>
+
+            <br><p><input type="submit" class="button button1 "value="Send"></p>
         </form>
         {{>footer}}
     </body>

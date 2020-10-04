@@ -3,13 +3,18 @@
 <head>
     <title>{{title}}</title>
     <meta charset="utf-8">
+
+    <link type="text/css" href="/css/style.css" rel="stylesheet">
+
 </head>
     <body>
         {{>menu}}
-        <p><h3>Your string before sorting:</h3>
-        {{yourQuery}}
-        <p><h3>Your string after sorting:</h3>
-        {{answer}}
+        <div class="header">
+        <p><br>Your string before sorting:</div>
+        <div class="information">
+        <br>{{yourQuery}}</div>
+        <div class="header"><p><br>Your string after sorting:</div>
+        <div class="information"><br>{{answer}}</div>
         <p>
         {{>footer}}
     </body>
