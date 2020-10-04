@@ -13,16 +13,17 @@ const app = express()
 app.set("view engine", "hbs");
 hbs.registerPartials("./views/partials/")
 
+app.use(express.static("public"));
+
 app.use(LoggingToConsole); // middleware Logging Request
 
 app.get('/',function(request,response){
     response.render("home.hbs", {
         title: title,
-        main: "Home page",
         information: "There are three functions:",
-        lab1: "1) Soring string",
-        lab2: "2) Camel register",
-        lab3: "3) Definition Day Off"
+        lab1: "◄ Sort string characters",
+        lab2: "◄ Camel register",
+        lab3: "◄ Definition Day Off"
     })
 })
 
@@ -78,7 +79,7 @@ app.get('/api/LukinaValeria/lab1/3_Result', AuthUser, function(request,response,
         next(new Error('403_WrongValue'))
         return
     }
-    let answer = function_3.DayOff(request.query.year_,request.query.month_,request.query.date_)
+    let answer = function_3.DayOff(request.query.year_,request.query.month_-1,request.query.date_)
 
     response.render("dayOffResult.hbs",{
         title: title,
