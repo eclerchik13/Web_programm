@@ -10,15 +10,23 @@
     <body>
 
         {{>menu}}
-        <div class="header">
+        <h3 class="head">
             <br><p>{{information}}</p>
+        </h3>
+        <div class="info">
+        <div class="info_1">
+            <p>{{lab1}} </p>
         </div>
-        <div class="content">
-            <br><p>{{lab1}}</p>
-            <br><p>{{lab2}}</p>
-            <br><p>{{lab3}}</p>
+        <div class="info_2">
+            <p>{{lab2}}  </p>
         </div>
+        <div class="info_3">
+            <p>{{lab3}}</p>
+        </div></div>
 
+        <div class="link"><a href="/api/LukinaValeria/lab1/2_Input" class="d">Task 1</a>
+            <br><p><a href="/api/LukinaValeria/lab1/1_Input" class="d">Task 2</a>
+            <br><p><a href="/api/LukinaValeria/lab1/3_Input" class="d">Task 3</a></p></div>
         {{>footer}}
 
     </body>
